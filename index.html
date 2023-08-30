@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="Maciej Małachowski" />
         <title>Maciek Małachowski</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="msapplication-TileColor" content="text-secondary">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="Portfolio - Maciek Małachowski">
+        <meta name="keywords" content="Maciek Małachowski, Maciej Małachowski, Portfolio, Data Science, ">
+        <meta name="author" content="Maciej Małachowski" />
         
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -19,15 +23,20 @@
         
         <!-- Animations -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!-- CSS -->
         <link href="css/styles.css" rel="stylesheet" />
-        
     </head>
+    
     <body id="page-top">
 <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
+            <div class="container" data-aos="fade-down" data-aos-duration="2000"  data-aos-once="true">
                 <a class="navbar-brand" href="#page-top"><i class="fa-solid fa-house fa-xs"></i> Strona Główna</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#education">Edukacja</a></li>
@@ -56,7 +65,7 @@
                 <p class="masthead-subheading font-weight-light">
                     <h2 class="text-white text-center" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">Jestem studentem, który interesuje się</h2>
                     <div class="typewrite-div" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-                        <h2 class="typewrite" data-period="1500" data-type='["Data Science", "Data Engineering", "Python", "Sztuczną inteligencją", "Analityką", "Business Intelligence"]'><span class="wrap"></span></h2>
+                        <h2 class="typewrite" data-period="1500" data-type='["Data Science", "Data Engineering", "Python", "Sztuczną inteligencją", "Analityką", "Business Intelligence"]'></h2>
                     </div>
                 </p>
             </div>
@@ -75,7 +84,7 @@
                 <!-- Education Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Education Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
+                    <div class="col-lg-4 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -84,7 +93,7 @@
                         </div>
                     </div>
                     <!-- Ecucation Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
+                    <div class="col-lg-4 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -93,15 +102,13 @@
                         </div>
                     </div>
                     <!-- Ecucation Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
+                    <div class="col-lg-4 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/ug.png" alt="..." />
                         </div>
-                    </div>
-                    
                     </div>
                 </div>
             </div>
@@ -119,38 +126,35 @@
                 </div>
                 <!-- Skills Section Content-->
                 <div class="row">
-                    <div class="col-lg-6 ms-auto">
+                    <div class="col-lg-6">
                         <h3 class="font-weight-light text-center" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">Często używam:</h3>
-                    </div>
-                    <div class="col-lg-6 me-auto">
-                        <h3 class="font-weight-light text-center" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">Miałem styczność:</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-4">
-                        <p class="lead" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true"><i class="fa-brands fa-python fa-2xl"></i> Python</p>
-                        <p class="lead" data-aos="fade-right" data-aos-duration="1400" data-aos-once="true"><i class="fa-solid fa-robot fa-xl"></i> Machine Learning<br>(NumPy, Pandas, Matplotlib etc.)</p>
-                        <p class="lead" data-aos="fade-right" data-aos-duration="1600" data-aos-once="true"><img src="/assets/img/portfolio/jupyter.png" alt="...">Jupyter Notebook</p>
-                        <p class="lead" data-aos="fade-right" data-aos-duration="1800" data-aos-once="true"><i class="fa-brands fa-git-alt fa-2xl"></i> Git</p>
-                        <p class="lead" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"><i class="fa-brands fa-github fa-2xl"></i> Github</p>
-                    </div>
-                    <div class="col-lg-1"></div>
-                    <div class="col-lg-5">
                         <div class="row">
-                            <div class="col-lg-4 ms-auto text-start">
-                                <p class="lead" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true"><i class="fa-brands fa-sass fa-2xl"></i> Sass</p>
+                            <div class="col-lg-3 mx-3"></div>
+                            <div class="col-lg-6">
+                                <p class="lead" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true"><i class="fa-brands fa-python fa-2xl"></i> Python</p>
+                                <p class="lead" data-aos="fade-right" data-aos-duration="1400" data-aos-once="true"><i class="fa-solid fa-robot fa-xl"></i> Machine Learning<br>(NumPy, Pandas, Matplotlib etc.)</p>
+                                <p class="lead" data-aos="fade-right" data-aos-duration="1600" data-aos-once="true"><img src="/assets/img/portfolio/jupyter.png" alt="...">Jupyter Notebook</p>
+                                <p class="lead" data-aos="fade-right" data-aos-duration="1800" data-aos-once="true"><i class="fa-brands fa-git-alt fa-2xl"></i> Git</p>
+                                <p class="lead" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"><i class="fa-brands fa-github fa-2xl"></i> Github</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="font-weight-light text-center" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">Miałem styczność z:</h3>
+                        <div class="row">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-4">
+                                <p class="lead" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true"><i class="fa-brands fa-sass fa-xl"></i> Sass</p>
                                 <p class="lead" data-aos="fade-left" data-aos-duration="1400" data-aos-once="true"><i class="fa-brands fa-bootstrap fa-xl"></i> Bootstrap</p>
                                 <p class="lead" data-aos="fade-left" data-aos-duration="1600" data-aos-once="true"><i class="fa-brands fa-java fa-2xl"></i> Java</p>
                                 <p class="lead" data-aos="fade-left" data-aos-duration="1800" data-aos-once="true"><i class="fa-brands fa-js fa-xl"></i> JavaScript</p>
                                 <p class="lead" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true"><img src="/assets/img/portfolio/django.png" alt="..."> Django</p>
-
                             </div>
-                            <div class="col-lg-5 me-auto text-start">
+                            <div class="col-lg-5">
                                 <p class="lead" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true"><i class="fa-brands fa-php fa-2xl"></i> PHP</p>
                                 <p class="lead" data-aos="fade-left" data-aos-duration="1400" data-aos-once="true"><img src="/assets/img/portfolio/mysql.png" alt="...">&nbsp;&nbsp;MySQL</p>
                                 <p class="lead" data-aos="fade-left" data-aos-duration="1600" data-aos-once="true"><img src="/assets/img/portfolio/c-sharp.png" alt="...">C#</p>
-                                <p class="lead" data-aos="fade-left" data-aos-duration="1800" data-aos-once="true"><img src="/assets/img/portfolio/selenium.png" alt="...">Selenium</p>
+                                <p class="lead" data-aos="fade-left" data-aos-duration="1800" data-aos-once="true"><img src="/assets/img/portfolio/selenium.png" alt="...">&nbsp;Selenium</p>
                             </div>
                         </div>
                     </div>
@@ -214,10 +218,11 @@
                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                         <div class="divider-custom-line"></div>
                     </div>
-                    <div class="text-center mt-auto">
+                    <!-- Contact Section Content -->
+                    <div class="justify-content-center mt-auto">
                         <a class="btn btn-xl btn-outline-light mx-2" href="mailto:maciejmalachowski1@gmail.com" data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                             <i class="fa-regular fa-envelope"></i>
-                            Email
+                            &nbsp;&nbsp;Email&nbsp;
                         </a>
                         <a class="btn btn-xl btn-outline-light mx-2" href="https://github.com/maciekmalachowski" target="_blank" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                             <i class="fa-brands fa-github"></i>
