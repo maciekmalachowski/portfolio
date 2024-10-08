@@ -1,9 +1,81 @@
 {
     "navbar":{
-        "home": " Strona Główna",
-        "education": "Edukacja",
-        "skills": "Umiejętności",
-        "projects": "Projekty",
-        "contact": "Kontakt"
+        "home": " Home",
+        "education": "Education",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+
+    "landingPage": {
+        "myNameIs": "Hey, my name is",
+        "name": "Maciek Małachowski",
+        "description": "I am a student interested in"
+    },
+
+    "education": {
+        "title": "Education"
+    },
+
+    "educationItems": {
+        "zse": {
+            "paragraph1": "During my education there, I gained a solid foundation in programming and computer science. In addition to basic skills such as working with databases, developing web, mobile and desktop applications, I also learned about algorithmics, data structures and IT security.",
+            "paragraph2": "I participated in practical projects that allowed me to gain experience in various technologies and software tools, which prepared me for further work in the IT industry.",
+            "close": "Close"
+        },
+        "ug": {
+            "paragraph1": "I am expanding my knowledge of data analysis, artificial intelligence and mathematical modeling methods. The study program covers advanced topics such as statistics, multivariate analysis, machine learning and processing of large data sets.",
+            "paragraph2": "In addition, I am gaining skills in programming, optimizing mathematical models, and working with analytical tools, which allows me to effectively solve complex problems in the area of data science.",
+            "close": "Close"
+        },
+        "mljar": {
+            "paragraph1": "As part of my work at MLJAR, I develop and maintain the open-source mljar-supervised library. My responsibilities include modifying and fixing bugs in the code, as well as creating and updating technical documentation on a regular basis.",
+            "paragraph2": "In addition, I write technical articles related to AutoML topics and create programs that are used on <a href='https://mljar.com' target='_blank' style='text-decoration: none;'>MLJAR</a>, supporting users in the effective use of the tools offered by the company.",
+            "close": "Close"
+        }
+    },
+
+    "skills": {
+        "title": "Skills",
+        "commonUse": "I often use:",
+        "hadContact": "I had contact with:"
+    },
+
+    "projects": {
+            "title": "Projects"
+    },
+
+    "projectsItems": {
+        "house_price_precidtor": {
+            "paragraph1": "A web application built on the <a href='https://www.djangoproject.com' target='_blank' style='text-decoration: none;'>Django framework</a>, equipped with machine learning features. The models were developed in the Jupyter Notebook environment, where the <a href='https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html' target='_blank' style='text-decoration: none;'>RandomForest</a> algorithm was used to generate accurate predictions.",
+            "paragraph2": "The selection of the parameters of the house allows us to django-forms, which automatically enter the data into the database and then return the result in the form of a projected price and detailed information about the selected features of the house in Ames City.",
+            "paragraph3": "In addition, the application has user authentication features, and its architecture supports continuous improvement of forecasts based on new data.",
+            "check": "Check out"
+        },
+        "docs_ai_chatbot": {
+            "paragraph1": "The application, written in Python, allows interaction with PDF and CSV files in the form of a chatbot. It uses the LLM <a href='https://python.langchain.com/docs/integrations/llms/gpt4all/' target='_blank' style='text-decoration: none;'>GPT4ALL</a> module from the Langchain library to read data from the files, and then a chatbot, based on the Mistral 7B model, provides answers to the questions asked.",
+            "paragraph2": "The user interface was created based on the open-source <a href='https://streamlit.io' target='_blank' style='text-decoration: none;'>Streamlit</a> library, which provides an intuitive and convenient user experience.",
+            "check": "Check out"
+        },
+        "crypto_charts_site": {
+            "paragraph1": "A Jupyter Notebook-based application has been developed to analyze market data using the Binance API, using the <a href='https://github.com/sammchardy/python-binance' target='_blank' style='text-decoration: none;''>Python-binance library</a>.",
+            "paragraph2": "The Numpy and Pandas libraries enable the retrieval and analysis of market data, while graph visualization is handled by <a href='https://github.com/matplotlib/mplfinance' target='_blank' style='text-decoration: none;'>Mplfinance</a>, which uses Matplotlib.",
+            "paragraph3": "In addition, thanks to the open-source library <a href='https://mljar.com/mercury/' target='_blank' style='text-decoration: none;'>Mercury</a>, it is possible to add interactive widgets in the Jupyter notebook, making the notebook available as a web application, deployed through the <a href='https://cloud.runmercury.com' target='_blank' style='text-decoration: none;'>RunMercury Cloud</a> platform.",
+            "check": "Check out"
+        },
+        "spotify_playlist_downloader": {
+            "paragraph1": "The program allows you to seamlessly download your favorite playlists and albums from Spotify (assuming it's legal).",
+            "paragraph2": "The application is based on <a href='https://github.com/spotipy-dev/spotipy' target='_blank' style='text-decoration: none;'>Spotipy</a> library and offers an intuitive user interface, created in <a href='https://streamlit.io' target='_blank' style='text-decoration: none;'>Streamlit</a>. The download process is carried out using <a href='https://github.com/pytube/pytube' target='_blank' style='text-decoration: none;'>Pytube</a>.",
+            "check": "Check out"
+        },
+        "ml_alogorithm_comparison": {
+            "paragraph1": "The application automates the process of comparing different machine learning algorithms on multiple data sets. It uses AutoML from the <a href='https://github.com/mljar/mljar-supervised' target='_blank' style='text-decoration: none;'>mljar-supervised</a> library to create models and evaluate their performance in both classification and regression tasks.",
+            "paragraph2": "The program allows automated model training, performance evaluation, ranking and generation of comparison charts for different algorithms.",
+            "check": "Check out"
+        }
+    },
+
+    "contact": {
+        "title": "Kontakt"
     }
 }
