@@ -1,0 +1,9 @@
+{
+    "navbar":{
+        "home": " Strona Główna",
+        "education": "Edukacja",
+        "skills": "Umiejętności",
+        "projects": "Projekty",
+        "contact": "Kontakt"
+    }
+}
