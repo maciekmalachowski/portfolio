@@ -9,7 +9,6 @@
 
     "landingPage": {
         "myNameIs": "Hej, nazywam się",
-        "name": "Maciek Małachowski",
         "description": "Jestem studentem, który interesuje się"
     },
 
@@ -19,21 +18,24 @@
 
     "educationItems": {
         "zse": {
+            "title": "Technik Programista 2019-2023",
             "paragraph1": "W trakcie nauki w tej placówce zdobyłem solidne podstawy z zakresu programowania i informatyki. Oprócz podstawowych umiejętności, takich jak praca z bazami danych, tworzenie aplikacji webowych, mobilnych i desktopowych, poznałem również zagadnienia związane z algorytmiką, strukturami danych oraz bezpieczeństwem informatycznym.",
-            "paragraph2": "Uczestniczyłem w projektach praktycznych, które pozwoliły mi na zdobycie doświadczenia w różnych technologiach i narzędziach programistycznych, co przygotowało mnie do dalszej pracy w branży IT.",
-            "close": "Zamknij okno"
+            "paragraph2": "Uczestniczyłem w projektach praktycznych, które pozwoliły mi na zdobycie doświadczenia w różnych technologiach i narzędziach programistycznych, co przygotowało mnie do dalszej pracy w branży IT."
         },
         "ug": {
+            "title": "Modelowanie matematyczne i analiza danych 2023-aktualnie",
             "paragraph1": "Poszerzam swoją wiedzę z zakresu analizy danych, sztucznej inteligencji oraz matematycznych metod modelowania. Program studiów obejmuje zaawansowane zagadnienia takie jak statystyka, analiza wielowymiarowa, uczenie maszynowe oraz przetwarzanie dużych zbiorów danych.",
-            "paragraph2": "Dodatkowo, zdobywam umiejętności w programowaniu, optymalizacji modeli matematycznych oraz pracy z narzędziami analitycznymi, co pozwala na skuteczne rozwiązywanie złożonych problemów w obszarze nauk o danych.",
-            "close": "Zamknij okno"
+            "paragraph2": "Dodatkowo, zdobywam umiejętności w programowaniu, optymalizacji modeli matematycznych oraz pracy z narzędziami analitycznymi, co pozwala na skuteczne rozwiązywanie złożonych problemów w obszarze nauk o danych."
         },
         "mljar": {
+            "title": "Junior Data Scientist 06.2024-10.2024",
             "paragraph1": "W ramach pracy w MLJAR zajmuję się rozwojem i utrzymaniem open-source'owej biblioteki mljar-supervised. Moje obowiązki obejmują modyfikację oraz naprawę błędów w kodzie, a także regularne tworzenie i aktualizację dokumentacji technicznej.",
-            "paragraph2": "Dodatkowo, piszę artykuły techniczne związane z tematyką AutoML oraz tworzę programy, które są wykorzystywane na stronie <a href='https://mljar.com' target='_blank' style='text-decoration: none;'>MLJAR</a>, wspierając użytkowników w efektywnym korzystaniu z narzędzi oferowanych przez firmę.",
-            "close": "Zamknij okno"
+            "paragraph2": "Dodatkowo, piszę artykuły techniczne związane z tematyką AutoML oraz tworzę programy, które są wykorzystywane na stronie <a href='https://mljar.com' target='_blank' style='text-decoration: none;'>MLJAR</a>, wspierając użytkowników w efektywnym korzystaniu z narzędzi oferowanych przez firmę."
         }
     },
+
+    "close": "Zamknij okno",
+
 
     "skills": {
         "title": "Umiejętności",
@@ -46,34 +48,36 @@
     },
 
     "projectsItems": {
-        "house_price_precidtor": {
+        "house_price_predictor": {
             "paragraph1": "Aplikacja webowa zbudowana na frameworku <a href='https://www.djangoproject.com' target='_blank' style='text-decoration: none;'>Django</a>, wyposażona w funkcje uczenia maszynowego. Modele zostały opracowane w środowisku Jupyter Notebook, gdzie wykorzystano algorytm <a href='https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html' target='_blank' style='text-decoration: none;'>RandomForest</a> do generowania dokładnych prognoz.",
             "paragraph2": "Wybór parametrów domu umożliwia nam django-forms, które automatycznie wprowadzają dane do bazy, a następnie zwracają wynik w postaci prognozowanej ceny oraz szczegółowych informacji dotyczących wybranych cech domu w Ames City.",
-            "paragraph3": "Dodatkowo aplikacja posiada funkcje uwierzytelniania użytkowników, a jej architektura wspiera ciągłe doskonalenie prognoz w oparciu o nowe dane.",
-            "check": "Sprawdź"
+            "paragraph3": "Dodatkowo aplikacja posiada funkcje uwierzytelniania użytkowników, a jej architektura wspiera ciągłe doskonalenie prognoz w oparciu o nowe dane."
         },
+
         "docs_ai_chatbot": {
             "paragraph1": "Aplikacja napisana w Pythonie umożliwia interakcję z plikami PDF i CSV w formie chatu. Wykorzystuje moduł LLM <a href='https://python.langchain.com/docs/integrations/llms/gpt4all/' target='_blank' style='text-decoration: none;'>GPT4ALL</a> z biblioteki Langchain do odczytywania danych z plików, a następnie chatbot, oparty na modelu Mistral 7B, udziela odpowiedzi na zadawane pytania.",
-            "paragraph2": "Interfejs użytkownika został stworzony w oparciu o otwartą bibliotekę <a href='https://streamlit.io' target='_blank' style='text-decoration: none;'>Streamlit</a>, co zapewnia intuicyjną i wygodną obsługę.",
-            "check": "Sprawdź"
+            "paragraph2": "Interfejs użytkownika został stworzony w oparciu o otwartą bibliotekę <a href='https://streamlit.io' target='_blank' style='text-decoration: none;'>Streamlit</a>, co zapewnia intuicyjną i wygodną obsługę."
         },
+
         "crypto_charts_site": {
             "paragraph1": "Aplikacja oparta na Jupyter Notebook została stworzona do analizy danych rynkowych z wykorzystaniem interfejsu API Binance, przy użyciu biblioteki <a href='https://github.com/sammchardy/python-binance' target='_blank' style='text-decoration: none;''>Python-binance</a>.",
             "paragraph2": "Biblioteki Numpy i Pandas umożliwiają pobieranie oraz analizę danych rynkowych, natomiast wizualizacja wykresów jest realizowana za pomocą <a href='https://github.com/matplotlib/mplfinance' target='_blank' style='text-decoration: none;'>Mplfinance</a>, które wykorzystuje Matplotlib.",
-            "paragraph3": "Dodatkowo, dzięki bibliotece open-source <a href='https://mljar.com/mercury/' target='_blank' style='text-decoration: none;'>Mercury</a>, możliwe jest dodawanie interaktywnych widżetów w notatniku Jupyter, co pozwala na udostępnienie notatnika jako aplikacji internetowej, wdrażanej za pośrednictwem platformy <a href='https://cloud.runmercury.com' target='_blank' style='text-decoration: none;'>RunMercury Cloud</a>.",
-            "check": "Sprawdź"
+            "paragraph3": "Dodatkowo, dzięki bibliotece open-source <a href='https://mljar.com/mercury/' target='_blank' style='text-decoration: none;'>Mercury</a>, możliwe jest dodawanie interaktywnych widżetów w notatniku Jupyter, co pozwala na udostępnienie notatnika jako aplikacji internetowej, wdrażanej za pośrednictwem platformy <a href='https://cloud.runmercury.com' target='_blank' style='text-decoration: none;'>RunMercury Cloud</a>."
         },
+
         "spotify_playlist_downloader": {
             "paragraph1": "Program umożliwia bezproblemowe pobieranie ulubionych playlist i albumów ze Spotify (przy założeniu, że jest to legalne).",
-            "paragraph2": "Aplikacja opiera się na bibliotece <a href='https://github.com/spotipy-dev/spotipy' target='_blank' style='text-decoration: none;'>Spotipy</a> i oferuje intuicyjny interfejs użytkownika, stworzony w <a href='https://streamlit.io' target='_blank' style='text-decoration: none;'>Streamlit</a>. Proces pobierania realizowany jest za pomocą <a href='https://github.com/pytube/pytube' target='_blank' style='text-decoration: none;'>Pytube</a>.",
-            "check": "Sprawdź"
+            "paragraph2": "Aplikacja opiera się na bibliotece <a href='https://github.com/spotipy-dev/spotipy' target='_blank' style='text-decoration: none;'>Spotipy</a> i oferuje intuicyjny interfejs użytkownika, stworzony w <a href='https://streamlit.io' target='_blank' style='text-decoration: none;'>Streamlit</a>. Proces pobierania realizowany jest za pomocą <a href='https://github.com/pytube/pytube' target='_blank' style='text-decoration: none;'>Pytube</a>."
         },
+
         "ml_alogorithm_comparison": {
             "paragraph1": "Aplikacja automatyzuje proces porównywania różnych algorytmów uczenia maszynowego na wielu zestawach danych. Wykorzystuje AutoML z biblioteki <a href='https://github.com/mljar/mljar-supervised' target='_blank' style='text-decoration: none;'>mljar-supervised</a> do tworzenia modeli i oceny ich wydajności zarówno w zadaniach klasyfikacji, jak i regresji.",
-            "paragraph2": "Program umożliwia zautomatyzowane trenowanie modeli, ocenę wyników, tworzenie rankingów oraz generowanie wykresów porównawczych dla różnych algorytmów.",
-            "check": "Sprawdź"
+            "paragraph2": "Program umożliwia zautomatyzowane trenowanie modeli, ocenę wyników, tworzenie rankingów oraz generowanie wykresów porównawczych dla różnych algorytmów."
         }
     },
+
+    "check": "Sprawdź",
+
 
     "contact": {
         "title": "Kontakt"

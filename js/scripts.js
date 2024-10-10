@@ -107,23 +107,108 @@ window.addEventListener('DOMContentLoaded', event => {
             translations = await response.json();
             console.log('Translations loaded for', lang, ':', translations);
             // Change the language immediately after loading
-            changeLanguage(lang);
+            changeLanguage();
         } 
         catch (error) {
             console.error('Error loading translations:', error);
         }
     }
 
-    function changeLanguage(lang) {
-        // Update the <title> tag
-        document.title = translations.title || 'Welcome';
+    function changeLanguage() {
+        const navbarHome = document.querySelector('.navbarHome');
+        navbarHome.textContent = translations.navbar.home;
 
-        // Update the header text
-        const header = document.querySelector('h1');
-        if (header) {
-            header.textContent = translations.header || 'Welcome';
+        const myNameIs = document.querySelector('.myNameIs');
+        const desc = document.querySelector('.landingDescription');
+        myNameIs.textContent = translations.landingPage.myNameIs;
+        desc.textContent = translations.landingPage.description;
+
+        const navbarEducation = document.querySelector('.navbarEducation');
+        const navbarSkills = document.querySelector('.navbarSkills');
+        const navbarProjects = document.querySelector('.navbarProjects');
+        const navbarContact = document.querySelector('.navbarContact');
+        navbarEducation.textContent = translations.navbar.education; 
+        navbarSkills.textContent = translations.navbar.skills; 
+        navbarProjects.textContent = translations.navbar.projects; 
+        navbarContact.textContent = translations.navbar.contact; 
+
+        const educationTitle = document.querySelector('.educationTitle');
+        const skillsTitle = document.querySelector('.skillsTitle');
+        const projectsTitle = document.querySelector('.projectsTitle');
+        const contactTitle = document.querySelector('.contactTitle');
+        educationTitle.textContent = translations.education.title; 
+        skillsTitle.textContent = translations.skills.title; 
+        projectsTitle.textContent = translations.projects.title; 
+        contactTitle.textContent = translations.contact.title; 
+        
+        const zseTitle = document.querySelector('.zseTitle');
+        const zseParagraph1 = document.querySelector('.zseParagraph1');
+        const zseParagraph2 = document.querySelector('.zseParagraph2');
+        zseTitle.textContent = translations.educationItems.zse.title; 
+        zseParagraph1.innerHTML = translations.educationItems.zse.paragraph1; 
+        zseParagraph2.innerHTML = translations.educationItems.zse.paragraph2; 
+
+        const ugTitle = document.querySelector('.ugTitle');
+        const ugParagraph1 = document.querySelector('.ugParagraph1');
+        const ugParagraph2 = document.querySelector('.ugParagraph2');
+        ugTitle.textContent = translations.educationItems.ug.title;
+        ugParagraph1.innerHTML = translations.educationItems.ug.paragraph1;
+        ugParagraph2.innerHTML = translations.educationItems.ug.paragraph2;
+
+
+        const mljarTitle = document.querySelector('.mljarTitle');
+        const mljarParagraph1 = document.querySelector('.mljarParagraph1');
+        const mljarParagraph2 = document.querySelector('.mljarParagraph2');
+        mljarTitle.textContent = translations.educationItems.mljar.title; 
+        mljarParagraph1.innerHTML = translations.educationItems.mljar.paragraph1; 
+        mljarParagraph2.innerHTML = translations.educationItems.mljar.paragraph2; 
+
+        const commonUse = document.querySelector('.commonUse');
+        const hadContact = document.querySelector('.hadContact');
+        commonUse.textContent = translations.skills.commonUse; 
+        hadContact.textContent = translations.skills.hadContact; 
+
+        const house_price_predictor_p1 = document.querySelector('.house_price_predictor_p1');
+        const house_price_predictor_p2 = document.querySelector('.house_price_predictor_p2');
+        const house_price_predictor_p3 = document.querySelector('.house_price_predictor_p3');
+        house_price_predictor_p1.innerHTML = translations.projectsItems.house_price_predictor.paragraph1; 
+        house_price_predictor_p2.innerHTML = translations.projectsItems.house_price_predictor.paragraph2;
+        house_price_predictor_p3.innerHTML = translations.projectsItems.house_price_predictor.paragraph3;
+
+        const docs_ai_chatbot_p1 = document.querySelector('.docs_ai_chatbot_p1');
+        const docs_ai_chatbot_p2 = document.querySelector('.docs_ai_chatbot_p2');
+        docs_ai_chatbot_p1.innerHTML = translations.projectsItems.docs_ai_chatbot.paragraph1; 
+        docs_ai_chatbot_p2.innerHTML = translations.projectsItems.docs_ai_chatbot.paragraph2;
+
+        const crypto_charts_site_p1 = document.querySelector('.crypto_charts_site_p1');
+        const crypto_charts_site_p2 = document.querySelector('.crypto_charts_site_p2');
+        const crypto_charts_site_p3 = document.querySelector('.crypto_charts_site_p3');
+        crypto_charts_site_p1.innerHTML = translations.projectsItems.crypto_charts_site.paragraph1; 
+        crypto_charts_site_p2.innerHTML = translations.projectsItems.crypto_charts_site.paragraph2;
+        crypto_charts_site_p3.innerHTML = translations.projectsItems.crypto_charts_site.paragraph3; 
+
+        const spotify_playlist_downloader_p1 = document.querySelector('.spotify_playlist_downloader_p1');
+        const spotify_playlist_downloader_p2 = document.querySelector('.spotify_playlist_downloader_p2');
+        spotify_playlist_downloader_p1.innerHTML = translations.projectsItems.spotify_playlist_downloader.paragraph1;
+        spotify_playlist_downloader_p2.innerHTML = translations.projectsItems.spotify_playlist_downloader.paragraph2;
+
+        const ml_alogorithm_comparison_p1 = document.querySelector('.ml_alogorithm_comparison_p1');
+        const ml_alogorithm_comparison_p2 = document.querySelector('.ml_alogorithm_comparison_p2');
+        ml_alogorithm_comparison_p1.innerHTML = translations.projectsItems.ml_alogorithm_comparison.paragraph1; 
+        ml_alogorithm_comparison_p2.innerHTML = translations.projectsItems.ml_alogorithm_comparison.paragraph2;
+        
+        for (let i = 1; i <= 3; i++) {
+            const close = document.querySelector(`.close${i}`);
+            close.textContent = translations.close;
         }
+
+        for (let i = 1; i <= 5; i++) {
+            const check = document.querySelector(`.check${i}`);
+            check.textContent = translations.check;
+        }
+
     }
+
 class DynamicSelect {
 
     constructor(element, options = {}) {
@@ -137,6 +222,7 @@ class DynamicSelect {
             // Add the onChange function with logging here
             onChange: function(value) {
                 loadTranslations(value);
+
             }
         };
         this.options = Object.assign(defaults, options);

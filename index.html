@@ -32,17 +32,18 @@
 <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container" data-aos="fade-down" data-aos-duration="2000"  data-aos-once="true">
-                <a class="navbar-brand" href="#page-top"><i class="home fa-solid fa-house fa-xs"></i> Strona Główna</a>
+                <i class="navbar-brand fa-solid fa-house fa-xs"></i>
+                <a class="navbarHome navbar-brand" href="#page-top">Strona Główna</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#education">Edukacja</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#skills">Umiejętności</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Projekty</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Kontakt</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="navbarEducation nav-link py-3 px-0 px-lg-3 rounded" href="#education">Edukacja</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="navbarSkills nav-link py-3 px-0 px-lg-3 rounded" href="#skills">Umiejętności</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="navbarProjects nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Projekty</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="navbarContact nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Kontakt</a></li>
                     </ul>
                     <select id="langSelector" data-dynamic-select>
                         <option value="pl" data-img="assets/img/portfolio/pl.png">Polski</option>
@@ -57,7 +58,7 @@
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." data-aos="fade-up" data-aos-duration="2000"  data-aos-once="true"/>
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Hej, nazywam się</h1>
+                <h1 class="myNameIs masthead-heading text-uppercase" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Hej, nazywam się</h1>
                 <h1 class="masthead-heading text-uppercase text-secondary mb-0" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Maciek Małachowski</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
@@ -67,7 +68,7 @@
                 </div>
                 <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light">
-                    <h2 class="text-white text-center" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">Jestem studentem, który interesuje się</h2>
+                    <h2 class="landingDescription text-white text-center" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">Jestem studentem, który interesuje się</h2>
                     <div class="typewrite-div" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
                         <h2 class="typewrite" data-period="1500" data-type='["Data Science", "Data Engineering", "Python", "AI", "Analytics", "Business Intelligence"]'></h2>
                     </div>
@@ -78,7 +79,7 @@
         <section class="page-section portfolio" id="education">
             <div class="container">
                 <!-- Education Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">Edukacja</h2>
+                <h2 class="educationTitle page-section-heading text-center text-uppercase text-secondary mb-0" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">Edukacja</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
                     <div class="divider-custom-line"></div>
@@ -121,7 +122,7 @@
         <section class="page-section bg-primary text-white mb-0" id="skills">
             <div class="container">
                 <!-- Skills Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">Umiejętności</h2>
+                <h2 class="skillsTitle page-section-heading text-center text-uppercase text-white" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">Umiejętności</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
                     <div class="divider-custom-line"></div>
@@ -131,7 +132,7 @@
                 <!-- Skills Section Content-->
                 <div class="row">
                     <div class="col-lg-6">
-                        <h3 class="font-weight-light text-center" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">Często używam:</h3>
+                        <h3 class="commonUse font-weight-light text-center" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">Często używam:</h3>
                         <div class="row">
                             <div class="col-lg-3 mx-3"></div>
                             <div class="col-lg-6">
@@ -145,7 +146,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <h3 class="font-weight-light text-center" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">Miałem styczność z:</h3>
+                        <h3 class="hadContact font-weight-light text-center" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">Miałem styczność z:</h3>
                         <div class="row">
                             <div class="col-lg-3"></div>
                             <div class="col-lg-4">
@@ -175,7 +176,7 @@
             <section class="page-section portfolio" id="projects">
                 <div class="container">
                     <!-- Portfolio Section Heading-->
-                    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">Projekty</h2>
+                    <h2 class="projectsTitle page-section-heading text-center text-uppercase text-secondary mb-0" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">Projekty</h2>
                     <!-- Icon Divider-->
                     <div class="divider-custom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
                         <div class="divider-custom-line"></div>
@@ -241,7 +242,7 @@
             <section class="footer page-section  text-center" id="contact">
                 <div class="container">
                     <!-- Contact Section Heading-->
-                    <h2 class="page-section-heading text-center text-uppercase text-white mb-0" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">Kontakt</h2>
+                    <h2 class="contactTitle page-section-heading text-center text-uppercase text-white mb-0" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">Kontakt</h2>
                     <!-- Icon Divider-->
                     <div class="divider-custom divider-light" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
                         <div class="divider-custom-line"></div>
@@ -268,7 +269,7 @@
             </section>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Maciek Małachowski 2023</small></div>
+            <div class="container"><small>Copyright &copy; Maciej Małachowski 2023</small></div>
         </div>
 <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
@@ -282,7 +283,7 @@
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Zespół Szkół Elektrycznych</h2>
-                                    <h3 class="text-secondary">Technik Programista 2019-2023</h3>
+                                    <h3 class="zseTitle text-secondary">Technik Programista 2019-2023</h3>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -290,11 +291,11 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <h5 class="text-secondary mb-4">W trakcie nauki w tej placówce zdobyłem solidne podstawy z zakresu programowania i informatyki. Oprócz podstawowych umiejętności, takich jak praca z bazami danych, tworzenie aplikacji webowych, mobilnych i desktopowych, poznałem również zagadnienia związane z algorytmiką, strukturami danych oraz bezpieczeństwem informatycznym.</h5>
-                                    <h5 class="text-secondary mb-4">Uczestniczyłem w projektach praktycznych, które pozwoliły mi na zdobycie doświadczenia w różnych technologiach i narzędziach programistycznych, co przygotowało mnie do dalszej pracy w branży IT.</h5>
+                                    <h5 class="zseParagraph1 text-secondary mb-4">W trakcie nauki w tej placówce zdobyłem solidne podstawy z zakresu programowania i informatyki. Oprócz podstawowych umiejętności, takich jak praca z bazami danych, tworzenie aplikacji webowych, mobilnych i desktopowych, poznałem również zagadnienia związane z algorytmiką, strukturami danych oraz bezpieczeństwem informatycznym.</h5>
+                                    <h5 class="zseParagraph2 text-secondary mb-4">Uczestniczyłem w projektach praktycznych, które pozwoliły mi na zdobycie doświadczenia w różnych technologiach i narzędziach programistycznych, co przygotowało mnie do dalszej pracy w branży IT.</h5>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Zamknij okno
+                                        <span class="close1">Zamknij okno</span>
                                     </button>
                                 </div>
                             </div>
@@ -314,7 +315,7 @@
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Uniwersytet Gdański</h2>
-                                    <h3 class="text-secondary">Modelowanie matematyczne i analiza danych 2023-aktualnie</h3>
+                                    <h3 class="ugTitle text-secondary">Modelowanie matematyczne i analiza danych 2023-aktualnie</h3>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -322,11 +323,11 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <h5 class="text-secondary mb-4">Poszerzam swoją wiedzę z zakresu analizy danych, sztucznej inteligencji oraz matematycznych metod modelowania. Program studiów obejmuje zaawansowane zagadnienia takie jak statystyka, analiza wielowymiarowa, uczenie maszynowe oraz przetwarzanie dużych zbiorów danych.</h5>
-                                    <h5 class="text-secondary mb-4">Dodatkowo, zdobywam umiejętności w programowaniu, optymalizacji modeli matematycznych oraz pracy z narzędziami analitycznymi, co pozwala na skuteczne rozwiązywanie złożonych problemów w obszarze nauk o danych.</h5>
+                                    <h5 class="ugParagraph1 text-secondary mb-4">Poszerzam swoją wiedzę z zakresu analizy danych, sztucznej inteligencji oraz matematycznych metod modelowania. Program studiów obejmuje zaawansowane zagadnienia takie jak statystyka, analiza wielowymiarowa, uczenie maszynowe oraz przetwarzanie dużych zbiorów danych.</h5>
+                                    <h5 class="ugParagraph2 text-secondary mb-4">Dodatkowo, zdobywam umiejętności w programowaniu, optymalizacji modeli matematycznych oraz pracy z narzędziami analitycznymi, co pozwala na skuteczne rozwiązywanie złożonych problemów w obszarze nauk o danych.</h5>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Zamknij Okno
+                                        <span class="close2">Zamknij Okno</span>
                                     </button>
                                 </div>
                             </div>
@@ -346,7 +347,7 @@
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">MLJAR</h2>
-                                    <h3 class="text-secondary">Aktualnie</h3>
+                                    <h3 class="mljarTitle text-secondary">Junior Data Scientist 06.2024-10.2024</h3>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -354,11 +355,11 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <h5 class="text-secondary mb-4">W ramach pracy w MLJAR zajmuję się rozwojem i utrzymaniem open-source'owej biblioteki mljar-supervised. Moje obowiązki obejmują modyfikację oraz naprawę błędów w kodzie, a także regularne tworzenie i aktualizację dokumentacji technicznej.</h5>
-                                    <h5 class="text-secondary mb-4">Dodatkowo, piszę artykuły techniczne związane z tematyką AutoML oraz tworzę programy, które są wykorzystywane na stronie <a href="https://mljar.com" target="_blank" style="text-decoration: none;">MLJAR</a>, wspierając użytkowników w efektywnym korzystaniu z narzędzi oferowanych przez firmę.</h5>
+                                    <h5 class="mljarParagraph1 text-secondary mb-4">W ramach pracy w MLJAR zajmuję się rozwojem i utrzymaniem open-source'owej biblioteki mljar-supervised. Moje obowiązki obejmują modyfikację oraz naprawę błędów w kodzie, a także regularne tworzenie i aktualizację dokumentacji technicznej.</h5>
+                                    <h5 class="mljarParagraph2 text-secondary mb-4">Dodatkowo, piszę artykuły techniczne związane z tematyką AutoML oraz tworzę programy, które są wykorzystywane na stronie <a href="https://mljar.com" target="_blank" style="text-decoration: none;">MLJAR</a>, wspierając użytkowników w efektywnym korzystaniu z narzędzi oferowanych przez firmę.</h5>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Zamknij Okno
+                                        <span class="close3">Zamknij Okno</span>
                                     </button>
                                 </div>
                             </div>
@@ -386,12 +387,12 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <h5 class="text-secondary mb-4">Aplikacja webowa zbudowana na frameworku <a href="https://www.djangoproject.com" target="_blank" style="text-decoration: none;">Django</a>, wyposażona w funkcje uczenia maszynowego. Modele zostały opracowane w środowisku Jupyter Notebook, gdzie wykorzystano algorytm <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html" target="_blank" style="text-decoration: none;">RandomForest</a> do generowania dokładnych prognoz.</h5>
-                                    <h5 class="text-secondary mb-4">Wybór parametrów domu umożliwia nam django-forms, które automatycznie wprowadzają dane do bazy, a następnie zwracają wynik w postaci prognozowanej ceny oraz szczegółowych informacji dotyczących wybranych cech domu w Ames City.</h5>
-                                    <h5 class="text-secondary mb-4">Dodatkowo aplikacja posiada funkcje uwierzytelniania użytkowników, a jej architektura wspiera ciągłe doskonalenie prognoz w oparciu o nowe dane.</h5>
+                                    <h5 class="house_price_predictor_p1 text-secondary mb-4">Aplikacja webowa zbudowana na frameworku <a href="https://www.djangoproject.com" target="_blank" style="text-decoration: none;">Django</a>, wyposażona w funkcje uczenia maszynowego. Modele zostały opracowane w środowisku Jupyter Notebook, gdzie wykorzystano algorytm <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html" target="_blank" style="text-decoration: none;">RandomForest</a> do generowania dokładnych prognoz.</h5>
+                                    <h5 class="house_price_predictor_p2 text-secondary mb-4">Wybór parametrów domu umożliwia nam django-forms, które automatycznie wprowadzają dane do bazy, a następnie zwracają wynik w postaci prognozowanej ceny oraz szczegółowych informacji dotyczących wybranych cech domu w Ames City.</h5>
+                                    <h5 class="house_price_predictor_p3 text-secondary mb-4">Dodatkowo aplikacja posiada funkcje uwierzytelniania użytkowników, a jej architektura wspiera ciągłe doskonalenie prognoz w oparciu o nowe dane.</h5>
                                     <a class="btn btn-xl btn-outline-primary mx-2" href="https://github.com/maciekmalachowski/House-price-predictor" target="_blank">
                                         <i class="fa-brands fa-github"></i>
-                                        Sprawdź
+                                        <span class="check1">Sprawdź</span>
                                     </a>
                                 </div>
                             </div>
@@ -419,11 +420,11 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <h5 class="text-secondary mb-4">Aplikacja napisana w Pythonie umożliwia interakcję z plikami PDF i CSV w formie chatu. Wykorzystuje moduł LLM <a href="https://python.langchain.com/docs/integrations/llms/gpt4all/" target="_blank" style="text-decoration: none;">GPT4ALL</a> z biblioteki Langchain do odczytywania danych z plików, a następnie chatbot, oparty na modelu Mistral 7B, udziela odpowiedzi na zadawane pytania.</h5>
-                                    <h5 class="text-secondary mb-4">Interfejs użytkownika został stworzony w oparciu o otwartą bibliotekę <a href="https://streamlit.io" target="_blank" style="text-decoration: none;">Streamlit</a>, co zapewnia intuicyjną i wygodną obsługę.</h5>
+                                    <h5 class="docs_ai_chatbot_p1 text-secondary mb-4">Aplikacja napisana w Pythonie umożliwia interakcję z plikami PDF i CSV w formie chatu. Wykorzystuje moduł LLM <a href="https://python.langchain.com/docs/integrations/llms/gpt4all/" target="_blank" style="text-decoration: none;">GPT4ALL</a> z biblioteki Langchain do odczytywania danych z plików, a następnie chatbot, oparty na modelu Mistral 7B, udziela odpowiedzi na zadawane pytania.</h5>
+                                    <h5 class="docs_ai_chatbot_p2 text-secondary mb-4">Interfejs użytkownika został stworzony w oparciu o otwartą bibliotekę <a href="https://streamlit.io" target="_blank" style="text-decoration: none;">Streamlit</a>, co zapewnia intuicyjną i wygodną obsługę.</h5>
                                     <a class="btn btn-xl btn-outline-primary mx-2" href="https://github.com/maciekmalachowski/Docs-ai-chatbot" target="_blank">
                                         <i class="fa-brands fa-github"></i>
-                                        Sprawdź
+                                        <span class="check2">Sprawdź</span>
                                     </a>
                                 </div>
                             </div>
@@ -451,12 +452,12 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <h5 class="text-secondary mb-4">Aplikacja oparta na Jupyter Notebook została stworzona do analizy danych rynkowych z wykorzystaniem interfejsu API Binance, przy użyciu biblioteki <a href="https://github.com/sammchardy/python-binance" target="_blank" style="text-decoration: none;">Python-binance</a>.</h5>
-                                    <h5 class="text-secondary mb-4">Biblioteki Numpy i Pandas umożliwiają pobieranie oraz analizę danych rynkowych, natomiast wizualizacja wykresów jest realizowana za pomocą <a href="https://github.com/matplotlib/mplfinance" target="_blank" style="text-decoration: none;">Mplfinance</a>, które wykorzystuje Matplotlib.</h5>
-                                    <h5 class="text-secondary mb-4">Dodatkowo, dzięki bibliotece open-source <a href="https://mljar.com/mercury/" target="_blank" style="text-decoration: none;">Mercury</a>, możliwe jest dodawanie interaktywnych widżetów w notatniku Jupyter, co pozwala na udostępnienie notatnika jako aplikacji internetowej, wdrażanej za pośrednictwem platformy <a href="https://cloud.runmercury.com" target="_blank" style="text-decoration: none;">RunMercury Cloud</a>.</h5>
+                                    <h5 class="crypto_charts_site_p1 text-secondary mb-4">Aplikacja oparta na Jupyter Notebook została stworzona do analizy danych rynkowych z wykorzystaniem interfejsu API Binance, przy użyciu biblioteki <a href="https://github.com/sammchardy/python-binance" target="_blank" style="text-decoration: none;">Python-binance</a>.</h5>
+                                    <h5 class="crypto_charts_site_p2 text-secondary mb-4">Biblioteki Numpy i Pandas umożliwiają pobieranie oraz analizę danych rynkowych, natomiast wizualizacja wykresów jest realizowana za pomocą <a href="https://github.com/matplotlib/mplfinance" target="_blank" style="text-decoration: none;">Mplfinance</a>, które wykorzystuje Matplotlib.</h5>
+                                    <h5 class="crypto_charts_site_p3 text-secondary mb-4">Dodatkowo, dzięki bibliotece open-source <a href="https://mljar.com/mercury/" target="_blank" style="text-decoration: none;">Mercury</a>, możliwe jest dodawanie interaktywnych widżetów w notatniku Jupyter, co pozwala na udostępnienie notatnika jako aplikacji internetowej, wdrażanej za pośrednictwem platformy <a href="https://cloud.runmercury.com" target="_blank" style="text-decoration: none;">RunMercury Cloud</a>.</h5>
                                     <a class="btn btn-xl btn-outline-primary mx-2" href="https://github.com/maciekmalachowski/Crypto-charts-site" target="_blank">
                                         <i class="fa-brands fa-github"></i>
-                                        Sprawdź
+                                        <span class="check3">Sprawdź</span>
                                     </a>
                                 </div>
                             </div>
@@ -484,11 +485,11 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <h5 class="text-secondary mb-4">Program umożliwia bezproblemowe pobieranie ulubionych playlist i albumów ze Spotify (przy założeniu, że jest to legalne).</h5>
-                                    <h5 class="text-secondary mb-4">Aplikacja opiera się na bibliotece <a href="https://github.com/spotipy-dev/spotipy" target="_blank" style="text-decoration: none;">Spotipy</a> i oferuje intuicyjny interfejs użytkownika, stworzony w <a href="https://streamlit.io" target="_blank" style="text-decoration: none;">Streamlit</a>. Proces pobierania realizowany jest za pomocą <a href="https://github.com/pytube/pytube" target="_blank" style="text-decoration: none;">Pytube</a>.</h5>
+                                    <h5 class="spotify_playlist_downloader_p1 text-secondary mb-4">Program umożliwia bezproblemowe pobieranie ulubionych playlist i albumów ze Spotify (przy założeniu, że jest to legalne).</h5>
+                                    <h5 class="spotify_playlist_downloader_p2 text-secondary mb-4">Aplikacja opiera się na bibliotece <a href="https://github.com/spotipy-dev/spotipy" target="_blank" style="text-decoration: none;">Spotipy</a> i oferuje intuicyjny interfejs użytkownika, stworzony w <a href="https://streamlit.io" target="_blank" style="text-decoration: none;">Streamlit</a>. Proces pobierania realizowany jest za pomocą <a href="https://github.com/pytube/pytube" target="_blank" style="text-decoration: none;">Pytube</a>.</h5>
                                     <a class="btn btn-xl btn-outline-primary mx-2" href="https://github.com/maciekmalachowski/Spotify-playlist-downloader" target="_blank">
                                         <i class="fa-brands fa-github"></i>
-                                        Sprawdź
+                                        <span class="check4">Sprawdź</span>
                                     </a>
                                 </div>
                             </div>
@@ -516,11 +517,11 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <h5 class="text-secondary mb-4">Aplikacja automatyzuje proces porównywania różnych algorytmów uczenia maszynowego na wielu zestawach danych. Wykorzystuje AutoML z biblioteki <a href="https://github.com/mljar/mljar-supervised" target="_blank" style="text-decoration: none;">mljar-supervised</a> do tworzenia modeli i oceny ich wydajności zarówno w zadaniach klasyfikacji, jak i regresji.</h5>
-                                    <h5 class="text-secondary mb-4">Program umożliwia zautomatyzowane trenowanie modeli, ocenę wyników, tworzenie rankingów oraz generowanie wykresów porównawczych dla różnych algorytmów.</h5>
+                                    <h5 class="ml_alogorithm_comparison_p1 text-secondary mb-4">Aplikacja automatyzuje proces porównywania różnych algorytmów uczenia maszynowego na wielu zestawach danych. Wykorzystuje AutoML z biblioteki <a href="https://github.com/mljar/mljar-supervised" target="_blank" style="text-decoration: none;">mljar-supervised</a> do tworzenia modeli i oceny ich wydajności zarówno w zadaniach klasyfikacji, jak i regresji.</h5>
+                                    <h5 class="ml_alogorithm_comparison_p2 text-secondary mb-4">Program umożliwia zautomatyzowane trenowanie modeli, ocenę wyników, tworzenie rankingów oraz generowanie wykresów porównawczych dla różnych algorytmów.</h5>
                                     <a class="btn btn-xl btn-outline-primary mx-2" href="https://github.com/maciekmalachowski/Machine-learning-algorithm-comparison" target="_blank">
                                         <i class="fa-brands fa-github"></i>
-                                        Sprawdź
+                                        <span class="check5">Sprawdź</span>
                                     </a>
                                 </div>
                             </div>
