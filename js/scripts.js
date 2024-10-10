@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-//Typing effect
+// Typing effect in intuduction
     var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -96,8 +96,8 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+// Load json translation depending on your choice
     let translations = {};
-
     async function loadTranslations(lang) {
         try {
             const response = await fetch(`assets/translations/${lang}.json`);
@@ -114,24 +114,27 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     }
 
+// Change text translations
     function changeLanguage() {
-        const navbarHome = document.querySelector('.navbarHome');
-        navbarHome.textContent = translations.navbar.home;
-
+        // introduction
         const myNameIs = document.querySelector('.myNameIs');
         const desc = document.querySelector('.landingDescription');
         myNameIs.textContent = translations.landingPage.myNameIs;
         desc.textContent = translations.landingPage.description;
 
+        // navbar
+        const navbarHome = document.querySelector('.navbarHome');
         const navbarEducation = document.querySelector('.navbarEducation');
         const navbarSkills = document.querySelector('.navbarSkills');
         const navbarProjects = document.querySelector('.navbarProjects');
         const navbarContact = document.querySelector('.navbarContact');
+        navbarHome.textContent = translations.navbar.home;
         navbarEducation.textContent = translations.navbar.education; 
         navbarSkills.textContent = translations.navbar.skills; 
         navbarProjects.textContent = translations.navbar.projects; 
         navbarContact.textContent = translations.navbar.contact; 
 
+        // section main titles
         const educationTitle = document.querySelector('.educationTitle');
         const skillsTitle = document.querySelector('.skillsTitle');
         const projectsTitle = document.querySelector('.projectsTitle');
@@ -141,6 +144,7 @@ window.addEventListener('DOMContentLoaded', event => {
         projectsTitle.textContent = translations.projects.title; 
         contactTitle.textContent = translations.contact.title; 
         
+        // education1
         const zseTitle = document.querySelector('.zseTitle');
         const zseParagraph1 = document.querySelector('.zseParagraph1');
         const zseParagraph2 = document.querySelector('.zseParagraph2');
@@ -148,14 +152,17 @@ window.addEventListener('DOMContentLoaded', event => {
         zseParagraph1.innerHTML = translations.educationItems.zse.paragraph1; 
         zseParagraph2.innerHTML = translations.educationItems.zse.paragraph2; 
 
+        // education2
+        const ugName = document.querySelector('.ugName');
         const ugTitle = document.querySelector('.ugTitle');
         const ugParagraph1 = document.querySelector('.ugParagraph1');
         const ugParagraph2 = document.querySelector('.ugParagraph2');
+        ugName.textContent = translations.educationItems.ug.name;
         ugTitle.textContent = translations.educationItems.ug.title;
         ugParagraph1.innerHTML = translations.educationItems.ug.paragraph1;
         ugParagraph2.innerHTML = translations.educationItems.ug.paragraph2;
 
-
+        // education3
         const mljarTitle = document.querySelector('.mljarTitle');
         const mljarParagraph1 = document.querySelector('.mljarParagraph1');
         const mljarParagraph2 = document.querySelector('.mljarParagraph2');
@@ -163,11 +170,13 @@ window.addEventListener('DOMContentLoaded', event => {
         mljarParagraph1.innerHTML = translations.educationItems.mljar.paragraph1; 
         mljarParagraph2.innerHTML = translations.educationItems.mljar.paragraph2; 
 
+        // skills
         const commonUse = document.querySelector('.commonUse');
         const hadContact = document.querySelector('.hadContact');
         commonUse.textContent = translations.skills.commonUse; 
         hadContact.textContent = translations.skills.hadContact; 
 
+        // project1
         const house_price_predictor_p1 = document.querySelector('.house_price_predictor_p1');
         const house_price_predictor_p2 = document.querySelector('.house_price_predictor_p2');
         const house_price_predictor_p3 = document.querySelector('.house_price_predictor_p3');
@@ -175,11 +184,13 @@ window.addEventListener('DOMContentLoaded', event => {
         house_price_predictor_p2.innerHTML = translations.projectsItems.house_price_predictor.paragraph2;
         house_price_predictor_p3.innerHTML = translations.projectsItems.house_price_predictor.paragraph3;
 
+        // project2
         const docs_ai_chatbot_p1 = document.querySelector('.docs_ai_chatbot_p1');
         const docs_ai_chatbot_p2 = document.querySelector('.docs_ai_chatbot_p2');
         docs_ai_chatbot_p1.innerHTML = translations.projectsItems.docs_ai_chatbot.paragraph1; 
         docs_ai_chatbot_p2.innerHTML = translations.projectsItems.docs_ai_chatbot.paragraph2;
 
+        // project3
         const crypto_charts_site_p1 = document.querySelector('.crypto_charts_site_p1');
         const crypto_charts_site_p2 = document.querySelector('.crypto_charts_site_p2');
         const crypto_charts_site_p3 = document.querySelector('.crypto_charts_site_p3');
@@ -187,30 +198,33 @@ window.addEventListener('DOMContentLoaded', event => {
         crypto_charts_site_p2.innerHTML = translations.projectsItems.crypto_charts_site.paragraph2;
         crypto_charts_site_p3.innerHTML = translations.projectsItems.crypto_charts_site.paragraph3; 
 
+        // project4
         const spotify_playlist_downloader_p1 = document.querySelector('.spotify_playlist_downloader_p1');
         const spotify_playlist_downloader_p2 = document.querySelector('.spotify_playlist_downloader_p2');
         spotify_playlist_downloader_p1.innerHTML = translations.projectsItems.spotify_playlist_downloader.paragraph1;
         spotify_playlist_downloader_p2.innerHTML = translations.projectsItems.spotify_playlist_downloader.paragraph2;
 
+        // project5
         const ml_alogorithm_comparison_p1 = document.querySelector('.ml_alogorithm_comparison_p1');
         const ml_alogorithm_comparison_p2 = document.querySelector('.ml_alogorithm_comparison_p2');
         ml_alogorithm_comparison_p1.innerHTML = translations.projectsItems.ml_alogorithm_comparison.paragraph1; 
         ml_alogorithm_comparison_p2.innerHTML = translations.projectsItems.ml_alogorithm_comparison.paragraph2;
         
+        // close buttons
         for (let i = 1; i <= 3; i++) {
             const close = document.querySelector(`.close${i}`);
             close.textContent = translations.close;
         }
 
+        // check out buttons
         for (let i = 1; i <= 5; i++) {
             const check = document.querySelector(`.check${i}`);
             check.textContent = translations.check;
         }
-
     }
 
+// custom select class
 class DynamicSelect {
-
     constructor(element, options = {}) {
         let defaults = {
             placeholder: 'Select an option',
@@ -219,10 +233,8 @@ class DynamicSelect {
             width: '',
             height: '',
             data: [],
-            // Add the onChange function with logging here
             onChange: function(value) {
                 loadTranslations(value);
-
             }
         };
         this.options = Object.assign(defaults, options);
@@ -398,6 +410,7 @@ class DynamicSelect {
     }
 
 }
+// set default translation option
 loadTranslations('pl');
 document.querySelectorAll('[data-dynamic-select]').forEach(select => new DynamicSelect(select));
 });
