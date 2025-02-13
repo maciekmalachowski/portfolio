@@ -177,12 +177,12 @@ window.addEventListener('DOMContentLoaded', event => {
         hadContact.textContent = translations.skills.hadContact; 
 
         // project1
-        const house_price_predictor_p1 = document.querySelector('.house_price_predictor_p1');
-        const house_price_predictor_p2 = document.querySelector('.house_price_predictor_p2');
-        const house_price_predictor_p3 = document.querySelector('.house_price_predictor_p3');
-        house_price_predictor_p1.innerHTML = translations.projectsItems.house_price_predictor.paragraph1; 
-        house_price_predictor_p2.innerHTML = translations.projectsItems.house_price_predictor.paragraph2;
-        house_price_predictor_p3.innerHTML = translations.projectsItems.house_price_predictor.paragraph3;
+        const smart_mailer_p1 = document.querySelector('.smart_mailer_p1');
+        const smart_mailer_p3 = document.querySelector('.smart_mailer_p3');
+        const smart_mailer_p2 = document.querySelector('.smart_mailer_p2');
+        smart_mailer_p1.innerHTML = translations.projectsItems.smart_mailer.paragraph1; 
+        smart_mailer_p2.innerHTML = translations.projectsItems.smart_mailer.paragraph2;
+        smart_mailer_p3.innerHTML = translations.projectsItems.smart_mailer.paragraph3;
 
         // project2
         const docs_ai_chatbot_p1 = document.querySelector('.docs_ai_chatbot_p1');

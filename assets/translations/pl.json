@@ -30,12 +30,12 @@
         },
         "mljar": {
             "title": "Junior Data Scientist 06.2024-10.2024",
-            "paragraph1": "W ramach pracy w MLJAR zajmuję się rozwojem i utrzymaniem open-source'owej biblioteki mljar-supervised. Moje obowiązki obejmują modyfikację oraz naprawę błędów w kodzie, a także regularne tworzenie i aktualizację dokumentacji technicznej.",
-            "paragraph2": "Dodatkowo, piszę artykuły techniczne związane z tematyką AutoML oraz tworzę programy, które są wykorzystywane na stronie <a href='https://mljar.com' target='_blank' style='text-decoration: none;'>MLJAR</a>, wspierając użytkowników w efektywnym korzystaniu z narzędzi oferowanych przez firmę."
+            "paragraph1": "W ramach pracy w MLJAR zajmowałem się rozwojem i utrzymaniem open-source'owej biblioteki mljar-supervised. Moje obowiązki obejmowały modyfikację oraz naprawę błędów w kodzie, a także regularne tworzenie i aktualizację dokumentacji technicznej.",
+            "paragraph2": "Dodatkowo, pisałem artykuły techniczne związane z tematyką AutoML oraz tworzyłem programy, które są wykorzystywane na stronie <a href='https://mljar.com' target='_blank' style='text-decoration: none;'>MLJAR</a>, wspierając użytkowników w efektywnym korzystaniu z narzędzi oferowanych przez firmę."
         }
     },
 
-    "close": "Zamknij okno",
+    "close": "Zamknij",
 
 
     "skills": {
@@ -49,10 +49,10 @@
     },
 
     "projectsItems": {
-        "house_price_predictor": {
-            "paragraph1": "Aplikacja webowa zbudowana na frameworku <a href='https://www.djangoproject.com' target='_blank' style='text-decoration: none;'>Django</a>, wyposażona w funkcje uczenia maszynowego. Modele zostały opracowane w środowisku Jupyter Notebook, gdzie wykorzystano algorytm <a href='https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html' target='_blank' style='text-decoration: none;'>RandomForest</a> do generowania dokładnych prognoz.",
-            "paragraph2": "Wybór parametrów domu umożliwia nam django-forms, które automatycznie wprowadzają dane do bazy, a następnie zwracają wynik w postaci prognozowanej ceny oraz szczegółowych informacji dotyczących wybranych cech domu w Ames City.",
-            "paragraph3": "Dodatkowo aplikacja posiada funkcje uwierzytelniania użytkowników, a jej architektura wspiera ciągłe doskonalenie prognoz w oparciu o nowe dane."
+        "smart_mailer": {
+            "paragraph1": "Agent Multi-LLM, zbudowany w języku Python, automatyzuje zadania, takie jak wysyłanie spersonalizowanych wiadomości e-mail, wyszukiwanie danych firmowych i zarządzanie rekordami. Wykorzystuje on <a href='https://platform.openai.com/docs/models#gpt-4o' target='_blank' style='text-decoration: none;'>GPT-4 Turbo</a> do podejmowania decyzji oraz Ollama z <a href='https://ollama.com/library/llama3.1' target='_blank' style='text-decoration: none;'>Llama 3.1</a> do lokalnej analizy danych.",
+            "paragraph2": "Pandas obsługuje operacje na plikach Excel, a smtplib i PyYAML ułatwiają automatyzację poczty e-mail. Agent integruje <a href='https://www.llamaindex.ai' target='_blank' style='text-decoration: none;'>LlamaIndex</a> do interakcji w języku naturalnym, usprawniając przepływy pracy przy minimalnym ręcznym wprowadzaniu danych.",
+            "paragraph3": "Zaprojektowany z myślą o wydajności, usprawnia procesy biznesowe, umożliwiając płynną automatyzację opartą na sztucznej inteligencji i inteligentną obsługę danych."
         },
 
         "docs_ai_chatbot": {
