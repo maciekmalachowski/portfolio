@@ -55,15 +55,14 @@
             "paragraph3": "Designed for efficiency, it enhances business processes by enabling seamless AI-powered automation and intelligent data handling."
         },
 
+        "ml_alogorithm_comparison": {
+            "paragraph1": "The application automates the process of comparing different machine learning algorithms on multiple data sets. It uses AutoML from the <a href='https://github.com/mljar/mljar-supervised' target='_blank' style='text-decoration: none;'>mljar-supervised</a> library to create models and evaluate their performance in both classification and regression tasks.",
+            "paragraph2": "The program allows automated model training, performance evaluation, ranking and generation of comparison charts for different algorithms."
+        },
+
         "docs_ai_chatbot": {
             "paragraph1": "The application, written in Python, allows interaction with PDF and CSV files in the form of a chatbot. It uses the LLM <a href='https://python.langchain.com/docs/integrations/llms/gpt4all/' target='_blank' style='text-decoration: none;'>GPT4ALL</a> module from the Langchain library to read data from the files, and then a chatbot, based on the Mistral 7B model, provides answers to the questions asked.",
             "paragraph2": "The user interface was created based on the open-source <a href='https://streamlit.io' target='_blank' style='text-decoration: none;'>Streamlit</a> library, which provides an intuitive and convenient user experience."
-        },
-
-        "crypto_charts_site": {
-            "paragraph1": "A Jupyter Notebook-based application has been developed to analyze market data using the Binance API, using the <a href='https://github.com/sammchardy/python-binance' target='_blank' style='text-decoration: none;''>Python-binance library</a>.",
-            "paragraph2": "The Numpy and Pandas libraries enable the retrieval and analysis of market data, while graph visualization is handled by <a href='https://github.com/matplotlib/mplfinance' target='_blank' style='text-decoration: none;'>Mplfinance</a>, which uses Matplotlib.",
-            "paragraph3": "In addition, thanks to the open-source library <a href='https://mljar.com/mercury/' target='_blank' style='text-decoration: none;'>Mercury</a>, it is possible to add interactive widgets in the Jupyter notebook, making the notebook available as a web application, deployed through the <a href='https://cloud.runmercury.com' target='_blank' style='text-decoration: none;'>RunMercury Cloud</a> platform."
         },
 
         "spotify_playlist_downloader": {
@@ -71,10 +70,17 @@
             "paragraph2": "The application is based on <a href='https://github.com/spotipy-dev/spotipy' target='_blank' style='text-decoration: none;'>Spotipy</a> library and offers an intuitive user interface, created in <a href='https://streamlit.io' target='_blank' style='text-decoration: none;'>Streamlit</a>. The download process is carried out using <a href='https://github.com/pytube/pytube' target='_blank' style='text-decoration: none;'>Pytube</a>."
         },
 
-        "ml_alogorithm_comparison": {
-            "paragraph1": "The application automates the process of comparing different machine learning algorithms on multiple data sets. It uses AutoML from the <a href='https://github.com/mljar/mljar-supervised' target='_blank' style='text-decoration: none;'>mljar-supervised</a> library to create models and evaluate their performance in both classification and regression tasks.",
-            "paragraph2": "The program allows automated model training, performance evaluation, ranking and generation of comparison charts for different algorithms."
+        "cvwizard": {
+            "paragraph1": "CVWizard is an AI-powered web application that enhances job application success by aligning CVs with specific job descriptions. It extracts key skills, languages, and experience from CVs, compares them with job requirements, and provides personalized improvement suggestions.",
+            "paragraph2": "The frontend is built with <a href='https://react.dev' target='_blank' style='text-decoration: none;'>React</a>, <a href='https://www.typescriptlang.org' target='_blank' style='text-decoration: none;'>TypeScript</a>, and <a href='https://tailwindcss.com' target='_blank' style='text-decoration: none;'>TailwindCSS</a>, while the backend is based on Python, <a href='https://flask.palletsprojects.com/en/stable/' target='_blank' style='text-decoration: none;'>Flask</a> and <a href='https://www.llamaindex.ai' target='_blank' style='text-decoration: none;'>LlamaIndex</a> library. It leverages <a href='https://platform.openai.com/docs/models/gpt-4-turbo' target='_blank' style='text-decoration: none;'>GPT-4-turbo</a> model from OpenAI for AI-driven insights and semantic search, helping job seekers optimize their resumes effectively."
+        },
+
+        "crypto_charts_site": {
+            "paragraph1": "A Jupyter Notebook-based application has been developed to analyze market data using the Binance API, using the <a href='https://github.com/sammchardy/python-binance' target='_blank' style='text-decoration: none;''>Python-binance library</a>.",
+            "paragraph2": "The Numpy and Pandas libraries enable the retrieval and analysis of market data, while graph visualization is handled by <a href='https://github.com/matplotlib/mplfinance' target='_blank' style='text-decoration: none;'>Mplfinance</a>, which uses Matplotlib.",
+            "paragraph3": "In addition, thanks to the open-source library <a href='https://mljar.com/mercury/' target='_blank' style='text-decoration: none;'>Mercury</a>, it is possible to add interactive widgets in the Jupyter notebook, making the notebook available as a web application, deployed through the <a href='https://cloud.runmercury.com' target='_blank' style='text-decoration: none;'>RunMercury Cloud</a> platform."
         }
+
     },
 
     "check": "Check out",

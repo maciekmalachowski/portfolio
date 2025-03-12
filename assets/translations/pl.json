@@ -55,15 +55,14 @@
             "paragraph3": "Zaprojektowany z myślą o wydajności, usprawnia procesy biznesowe, umożliwiając płynną automatyzację opartą na sztucznej inteligencji i inteligentną obsługę danych."
         },
 
+        "ml_alogorithm_comparison": {
+            "paragraph1": "Aplikacja automatyzuje proces porównywania różnych algorytmów uczenia maszynowego na wielu zestawach danych. Wykorzystuje AutoML z biblioteki <a href='https://github.com/mljar/mljar-supervised' target='_blank' style='text-decoration: none;'>mljar-supervised</a> do tworzenia modeli i oceny ich wydajności zarówno w zadaniach klasyfikacji, jak i regresji.",
+            "paragraph2": "Program umożliwia zautomatyzowane trenowanie modeli, ocenę wyników, tworzenie rankingów oraz generowanie wykresów porównawczych dla różnych algorytmów."
+        },
+
         "docs_ai_chatbot": {
             "paragraph1": "Aplikacja napisana w Pythonie umożliwia interakcję z plikami PDF i CSV w formie chatu. Wykorzystuje moduł LLM <a href='https://python.langchain.com/docs/integrations/llms/gpt4all/' target='_blank' style='text-decoration: none;'>GPT4ALL</a> z biblioteki Langchain do odczytywania danych z plików, a następnie chatbot, oparty na modelu Mistral 7B, udziela odpowiedzi na zadawane pytania.",
             "paragraph2": "Interfejs użytkownika został stworzony w oparciu o otwartą bibliotekę <a href='https://streamlit.io' target='_blank' style='text-decoration: none;'>Streamlit</a>, co zapewnia intuicyjną i wygodną obsługę."
-        },
-
-        "crypto_charts_site": {
-            "paragraph1": "Aplikacja oparta na Jupyter Notebook została stworzona do analizy danych rynkowych z wykorzystaniem interfejsu API Binance, przy użyciu biblioteki <a href='https://github.com/sammchardy/python-binance' target='_blank' style='text-decoration: none;''>Python-binance</a>.",
-            "paragraph2": "Biblioteki Numpy i Pandas umożliwiają pobieranie oraz analizę danych rynkowych, natomiast wizualizacja wykresów jest realizowana za pomocą <a href='https://github.com/matplotlib/mplfinance' target='_blank' style='text-decoration: none;'>Mplfinance</a>, które wykorzystuje Matplotlib.",
-            "paragraph3": "Dodatkowo, dzięki bibliotece open-source <a href='https://mljar.com/mercury/' target='_blank' style='text-decoration: none;'>Mercury</a>, możliwe jest dodawanie interaktywnych widżetów w notatniku Jupyter, co pozwala na udostępnienie notatnika jako aplikacji internetowej, wdrażanej za pośrednictwem platformy <a href='https://cloud.runmercury.com' target='_blank' style='text-decoration: none;'>RunMercury Cloud</a>."
         },
 
         "spotify_playlist_downloader": {
@@ -71,9 +70,15 @@
             "paragraph2": "Aplikacja opiera się na bibliotece <a href='https://github.com/spotipy-dev/spotipy' target='_blank' style='text-decoration: none;'>Spotipy</a> i oferuje intuicyjny interfejs użytkownika, stworzony w <a href='https://streamlit.io' target='_blank' style='text-decoration: none;'>Streamlit</a>. Proces pobierania realizowany jest za pomocą <a href='https://github.com/pytube/pytube' target='_blank' style='text-decoration: none;'>Pytube</a>."
         },
 
-        "ml_alogorithm_comparison": {
-            "paragraph1": "Aplikacja automatyzuje proces porównywania różnych algorytmów uczenia maszynowego na wielu zestawach danych. Wykorzystuje AutoML z biblioteki <a href='https://github.com/mljar/mljar-supervised' target='_blank' style='text-decoration: none;'>mljar-supervised</a> do tworzenia modeli i oceny ich wydajności zarówno w zadaniach klasyfikacji, jak i regresji.",
-            "paragraph2": "Program umożliwia zautomatyzowane trenowanie modeli, ocenę wyników, tworzenie rankingów oraz generowanie wykresów porównawczych dla różnych algorytmów."
+        "cvwizard": {
+            "paragraph1": "CVWizard to oparta na sztucznej inteligencji aplikacja internetowa, która zwiększa skuteczność aplikacji o pracę poprzez dostosowanie CV do konkretnych ofert. Wyodrębnia kluczowe umiejętności, języki i doświadczenie z CV, porównuje je z wymaganiami stanowiska i zapewnia spersonalizowane sugestie dotyczące ulepszeń.",
+            "paragraph2": "Frontend został zbudowany w oparciu o <a href='https://react.dev' target='_blank' style='text-decoration: none;'>React</a>, <a href='https://www.typescriptlang.org' target='_blank' style='text-decoration: none;'>TypeScript</a> i <a href='https://tailwindcss.com' target='_blank' style='text-decoration: none;'>TailwindCSS</a>, natomiast backend bazuje na Pythonie, <a href='https://flask.palletsprojects.com/en/stable/' target='_blank' style='text-decoration: none;'>Flasku</a> i bibliotece <a href='https://www.llamaindex.ai' target='_blank' style='text-decoration: none;'>LlamaIndex</a>. Wykorzystuje model <a href='https://platform.openai.com/docs/models/gpt-4-turbo' target='_blank' style='text-decoration: none;'>GPT-4-turbo</a> z OpenAI do wglądu i wyszukiwania semantycznego, pomagając osobom poszukującym pracy skutecznie zoptymalizować swoje CV."
+        },
+
+        "crypto_charts_site": {
+            "paragraph1": "Aplikacja oparta na Jupyter Notebook została stworzona do analizy danych rynkowych z wykorzystaniem interfejsu API Binance, przy użyciu biblioteki <a href='https://github.com/sammchardy/python-binance' target='_blank' style='text-decoration: none;''>Python-binance</a>.",
+            "paragraph2": "Biblioteki Numpy i Pandas umożliwiają pobieranie oraz analizę danych rynkowych, natomiast wizualizacja wykresów jest realizowana za pomocą <a href='https://github.com/matplotlib/mplfinance' target='_blank' style='text-decoration: none;'>Mplfinance</a>, które wykorzystuje Matplotlib.",
+            "paragraph3": "Dodatkowo, dzięki bibliotece open-source <a href='https://mljar.com/mercury/' target='_blank' style='text-decoration: none;'>Mercury</a>, możliwe jest dodawanie interaktywnych widżetów w notatniku Jupyter, co pozwala na udostępnienie notatnika jako aplikacji internetowej, wdrażanej za pośrednictwem platformy <a href='https://cloud.runmercury.com' target='_blank' style='text-decoration: none;'>RunMercury Cloud</a>."
         }
     },
 

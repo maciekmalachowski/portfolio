@@ -185,18 +185,16 @@ window.addEventListener('DOMContentLoaded', event => {
         smart_mailer_p3.innerHTML = translations.projectsItems.smart_mailer.paragraph3;
 
         // project2
+        const ml_alogorithm_comparison_p1 = document.querySelector('.ml_alogorithm_comparison_p1');
+        const ml_alogorithm_comparison_p2 = document.querySelector('.ml_alogorithm_comparison_p2');
+        ml_alogorithm_comparison_p1.innerHTML = translations.projectsItems.ml_alogorithm_comparison.paragraph1; 
+        ml_alogorithm_comparison_p2.innerHTML = translations.projectsItems.ml_alogorithm_comparison.paragraph2;
+
+        // project3
         const docs_ai_chatbot_p1 = document.querySelector('.docs_ai_chatbot_p1');
         const docs_ai_chatbot_p2 = document.querySelector('.docs_ai_chatbot_p2');
         docs_ai_chatbot_p1.innerHTML = translations.projectsItems.docs_ai_chatbot.paragraph1; 
         docs_ai_chatbot_p2.innerHTML = translations.projectsItems.docs_ai_chatbot.paragraph2;
-
-        // project3
-        const crypto_charts_site_p1 = document.querySelector('.crypto_charts_site_p1');
-        const crypto_charts_site_p2 = document.querySelector('.crypto_charts_site_p2');
-        const crypto_charts_site_p3 = document.querySelector('.crypto_charts_site_p3');
-        crypto_charts_site_p1.innerHTML = translations.projectsItems.crypto_charts_site.paragraph1; 
-        crypto_charts_site_p2.innerHTML = translations.projectsItems.crypto_charts_site.paragraph2;
-        crypto_charts_site_p3.innerHTML = translations.projectsItems.crypto_charts_site.paragraph3; 
 
         // project4
         const spotify_playlist_downloader_p1 = document.querySelector('.spotify_playlist_downloader_p1');
@@ -205,11 +203,22 @@ window.addEventListener('DOMContentLoaded', event => {
         spotify_playlist_downloader_p2.innerHTML = translations.projectsItems.spotify_playlist_downloader.paragraph2;
 
         // project5
-        const ml_alogorithm_comparison_p1 = document.querySelector('.ml_alogorithm_comparison_p1');
-        const ml_alogorithm_comparison_p2 = document.querySelector('.ml_alogorithm_comparison_p2');
-        ml_alogorithm_comparison_p1.innerHTML = translations.projectsItems.ml_alogorithm_comparison.paragraph1; 
-        ml_alogorithm_comparison_p2.innerHTML = translations.projectsItems.ml_alogorithm_comparison.paragraph2;
-        
+        const cvwizard_p1 = document.querySelector('.cvwizard_p1');
+        const cvwizard_p2 = document.querySelector('.cvwizard_p2');
+        cvwizard_p1.innerHTML = translations.projectsItems.cvwizard.paragraph1; 
+        cvwizard_p2.innerHTML = translations.projectsItems.cvwizard.paragraph2;
+
+        // project6
+        const crypto_charts_site_p1 = document.querySelector('.crypto_charts_site_p1');
+        const crypto_charts_site_p2 = document.querySelector('.crypto_charts_site_p2');
+        const crypto_charts_site_p3 = document.querySelector('.crypto_charts_site_p3');
+        crypto_charts_site_p1.innerHTML = translations.projectsItems.crypto_charts_site.paragraph1; 
+        crypto_charts_site_p2.innerHTML = translations.projectsItems.crypto_charts_site.paragraph2;
+        crypto_charts_site_p3.innerHTML = translations.projectsItems.crypto_charts_site.paragraph3; 
+
+
+
+
         // close buttons
         for (let i = 1; i <= 3; i++) {
             const close = document.querySelector(`.close${i}`);
