@@ -1,0 +1,68 @@
+---
+import Section from './Section.astro';
+import { education } from '@/data/education';
+import { useTranslations, type Lang } from '@/i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const bio = {
+  en: [
+    'I design and ship production AI: RAG systems, multi-step agentic workflows, and automations that connect language models to CRMs, ERP systems, and external APIs. My day-to-day is turning fuzzy business problems into reliable, testable software.',
+    'Before AI engineering I contributed to open-source AutoML tooling at MLJAR, and I bring a data-science foundation — math modeling, ML, and clean data handling — to every system I build.',
+  ],
+  pl: [
+    'Projektuję i wdrażam produkcyjne AI: systemy RAG, wieloetapowe workflow agentowe i automatyzacje łączące modele językowe z CRM, systemami ERP i zewnętrznymi API. Na co dzień zamieniam nieostre problemy biznesowe w niezawodne, testowalne oprogramowanie.',
+    'Zanim zająłem się inżynierią AI, współtworzyłem otwartoźródłowe narzędzia AutoML w MLJAR. Do każdego systemu wnoszę fundament data science — modelowanie matematyczne, ML i porządną pracę z danymi.',
+  ],
+};
+
+const facts = [
+  { label: t('about.based'), value: t('about.basedValue') },
+  { label: t('about.languages'), value: t('about.langValue') },
+];
+---
+<Section id="about" label={t('about.label')} title={t('about.title')}>
+  <div class="grid gap-12 md:grid-cols-5">
+    <div class="space-y-5 md:col-span-3" data-reveal>
+      {bio[lang].map((p) => <p class="text-pretty leading-relaxed text-muted">{p}</p>)}
+    </div>
+
+    <div class="space-y-8 md:col-span-2" data-reveal data-delay="120ms">
+      <dl class="space-y-4">
+        {
+          facts.map((f) => (
+            <div class="flex flex-col gap-0.5">
+              <dt class="mono-label text-faint">{f.label}</dt>
+              <dd class="text-sm text-text/90">{f.value}</dd>
+            </div>
+          ))
+        }
+      </dl>
+
+      <div>
+        <p class="mono-label mb-3 text-faint">{t('about.education')}</p>
+        <ul class="space-y-4">
+          {
+            education.map((e) => (
+              <li>
+                <p class="text-sm font-medium text-text">{e.field[lang]}</p>
+                <p class="text-sm text-muted">
+                  {e.url ? (
+                    <a href={e.url} target="_blank" rel="noopener noreferrer" class="link-underline">
+                      {e.school}
+                    </a>
+                  ) : (
+                    e.school
+                  )}
+                </p>
+                <p class="mono-label mt-0.5">{e.period[lang]}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</Section>

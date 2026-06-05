@@ -1,0 +1,15 @@
+---
+import Section from './Section.astro';
+import ProjectCard from './ProjectCard.astro';
+import { projects } from '@/data/projects';
+import { useTranslations, type Lang } from '@/i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+<Section id="projects" label={t('projects.label')} title={t('projects.title')}>
+  <div class="grid gap-5 md:grid-cols-2">
+    {projects.map((project, i) => <ProjectCard project={project} lang={lang} index={i} />)}
+  </div>
+</Section>

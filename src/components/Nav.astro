@@ -1,0 +1,66 @@
+---
+import { site } from '@/data/site';
+import { useTranslations, type Lang } from '@/i18n/ui';
+import LangToggle from './LangToggle.astro';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const links = [
+  { href: '#work', label: t('nav.work') },
+  { href: '#projects', label: t('nav.projects') },
+  { href: '#about', label: t('nav.about') },
+  { href: '#contact', label: t('nav.contact') },
+];
+---
+<header
+  id="site-nav"
+  class="fixed inset-x-0 top-0 z-40 border-b border-transparent transition-all duration-300"
+>
+  <nav class="mx-auto flex max-w-5xl items-center justify-between px-5 py-4 sm:px-8">
+    <a href="#main" class="group flex items-center gap-2.5" aria-label={site.name}>
+      <span class="grid size-8 place-items-center rounded-md border border-line bg-surface font-mono text-sm font-medium text-accent">
+        {site.monogram}
+      </span>
+      <span class="hidden text-sm font-medium tracking-tight sm:inline">{site.name}</span>
+    </a>
+
+    <div class="flex items-center gap-1 sm:gap-2">
+      <ul class="mr-1 hidden items-center gap-1 md:flex">
+        {
+          links.map((l) => (
+            <li>
+              <a
+                href={l.href}
+                class="rounded-md px-3 py-2 text-sm text-muted transition-colors hover:text-text"
+              >
+                {l.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <LangToggle lang={lang} />
+    </div>
+  </nav>
+</header>
+
+<script>
+  // Add a subtle backdrop once the page is scrolled.
+  const nav = document.getElementById('site-nav');
+  const onScroll = () => {
+    if (!nav) return;
+    nav.classList.toggle('nav-scrolled', window.scrollY > 8);
+  };
+  onScroll();
+  document.addEventListener('scroll', onScroll, { passive: true });
+</script>
+
+<style>
+  :global(.nav-scrolled) {
+    border-bottom-color: var(--color-line);
+    background-color: color-mix(in oklab, var(--color-bg) 72%, transparent);
+    backdrop-filter: blur(12px);
+  }
+</style>

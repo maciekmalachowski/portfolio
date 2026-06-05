@@ -1,0 +1,19 @@
+---
+interface Props {
+  id: string;
+  label: string;
+  title: string;
+  class?: string;
+}
+const { id, label, title, class: cls = '' } = Astro.props;
+---
+<section id={id} class:list={['mx-auto max-w-5xl scroll-mt-20 px-5 py-12 sm:px-8 sm:py-16', cls]}>
+  <header class="mb-9" data-reveal>
+    <div class="mb-5 flex items-center gap-4">
+      <span class="mono-label whitespace-nowrap text-accent/80">{label}</span>
+      <span class="h-px flex-1 bg-line"></span>
+    </div>
+    <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">{title}</h2>
+  </header>
+  <slot />
+</section>

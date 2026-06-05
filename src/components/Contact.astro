@@ -1,0 +1,57 @@
+---
+import Icon from './Icon.astro';
+import { site } from '@/data/site';
+import { useTranslations, type Lang } from '@/i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+<section id="contact" class="mx-auto max-w-5xl scroll-mt-20 px-5 py-14 sm:px-8 sm:py-20">
+  <div
+    class="relative overflow-hidden rounded-3xl border border-line bg-surface/50 px-6 py-16 text-center sm:px-16"
+    data-reveal
+  >
+    <div
+      class="pointer-events-none absolute inset-x-0 -top-24 mx-auto h-48 w-2/3 rounded-full opacity-40 blur-3xl"
+      style="background: radial-gradient(closest-side, rgba(125,211,252,0.25), transparent);"
+    >
+    </div>
+
+    <p class="mono-label mb-4 text-accent/80">{t('contact.label')}</p>
+    <h2 class="mx-auto max-w-2xl text-balance text-3xl font-semibold tracking-tight sm:text-5xl">
+      {t('contact.title')}
+    </h2>
+    <p class="mx-auto mt-5 max-w-xl text-pretty leading-relaxed text-muted">{t('contact.intro')}</p>
+
+    <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
+      <a
+        href={`mailto:${site.email}`}
+        class="group inline-flex items-center gap-2 rounded-lg bg-text px-5 py-2.5 text-sm font-medium text-bg transition-transform hover:-translate-y-0.5"
+      >
+        <Icon name="mail" class="size-4" />
+        {t('contact.email')}
+      </a>
+      <a
+        href={site.socials.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 rounded-lg border border-line bg-surface/60 px-5 py-2.5 text-sm font-medium text-text transition-colors hover:border-line-strong"
+      >
+        <Icon name="github" class="size-4" />
+        GitHub
+      </a>
+      <a
+        href={site.socials.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 rounded-lg border border-line bg-surface/60 px-5 py-2.5 text-sm font-medium text-text transition-colors hover:border-line-strong"
+      >
+        <Icon name="linkedin" class="size-4" />
+        LinkedIn
+      </a>
+    </div>
+
+    <p class="mt-8 font-mono text-sm text-muted">{site.email}</p>
+  </div>
+</section>

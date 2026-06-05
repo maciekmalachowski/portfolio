@@ -1,0 +1,29 @@
+---
+import Section from './Section.astro';
+import { skills } from '@/data/skills';
+import { useTranslations, type Lang } from '@/i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+<Section id="skills" label={t('skills.label')} title={t('skills.title')}>
+  <dl class="grid gap-x-10 gap-y-8 sm:grid-cols-2">
+    {
+      skills.map((group, i) => (
+        <div data-reveal data-delay={`${i * 60}ms`}>
+          <dt class="mono-label mb-3 text-faint">{group.label[lang]}</dt>
+          <dd>
+            <ul class="flex flex-wrap gap-2">
+              {group.items.map((item) => (
+                <li class="rounded-lg border border-line bg-surface/60 px-3 py-1.5 text-sm text-text/85 transition-colors hover:border-line-strong hover:text-text">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </dd>
+        </div>
+      ))
+    }
+  </dl>
+</Section>

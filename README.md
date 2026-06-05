@@ -1,7 +1,56 @@
-<h1 align="center"> Portfolio website </h1>
+<h1 align="center">Portfolio — Maciej Małachowski</h1>
 
-<h2 align="center"> ➡ https://maciekmalachowski.pl ⬅ </h2>
+<p align="center"><b>AI Engineer · Agentic AI Developer</b></p>
+<p align="center">➡ <a href="https://maciekmalachowski.pl">maciekmalachowski.pl</a> ⬅</p>
 
-### The application is a simple website made with <i>`HTML`, `CSS` and `JavaScript`</i>. <br> `Bootstrap` plays a significant role in this project, as most elements are based on its classes.
-### Animations are provided by the [AOS library](https://michalsnik.github.io/aos/) and the [Storyset website](https://storyset.com).
-### Most of the icons are taken from [Font Awsome](https://fontawesome.com/icons) and [Iconfinder](https://www.iconfinder.com).
+A fast, static portfolio built with **Astro** and **Tailwind CSS v4**. Dark,
+minimal, fully bilingual (English at `/`, Polish at `/pl/`).
+
+## Stack
+
+| Area | Choice |
+| --- | --- |
+| Framework | Astro 5 (static output) |
+| Styling | Tailwind CSS v4 (via `@tailwindcss/vite`), dark theme |
+| i18n | Localized routes — `/` (EN) and `/pl/` (PL) |
+| Fonts | Inter + JetBrains Mono |
+| Icons | Inline SVG (no icon-font dependency) |
+
+## Develop
+
+```bash
+npm install
+npm run dev        # http://localhost:4321
+```
+
+## Build
+
+```bash
+npm run build      # → dist/  (static, deploy anywhere)
+npm run preview    # serve the production build locally
+```
+
+## Structure
+
+```
+public/            CV (PDF) + favicon — served as-is
+src/
+  layouts/Base.astro          <head>, SEO/OG, fonts, scroll-reveal
+  components/                 Nav, Hero, Experience, Projects, Skills, About, Contact, Footer, …
+  data/                       Content: site, experience, projects, skills, education (EN + PL)
+  i18n/ui.ts                  Short UI strings (EN + PL)
+  pages/index.astro           EN route
+  pages/pl/index.astro        PL route
+  styles/global.css           Design tokens + base styles
+```
+
+## Editing content
+
+All content is data-driven — edit the files in `src/data/` and `src/i18n/ui.ts`;
+both languages live side by side. No markup changes needed to update text,
+projects, or experience.
+
+## Deploy
+
+`npm run build` emits a static `dist/` that works on any static host
+(Vercel, Netlify, GitHub Pages, or plain file hosting).

@@ -127,3 +127,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Node / Astro
+node_modules/
+.astro/
+.DS_Store
+*.local
+.vercel
+.netlify
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
