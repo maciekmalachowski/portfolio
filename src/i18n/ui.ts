@@ -8,6 +8,7 @@ export const defaultLang: Lang = 'en';
 export const ui = {
   en: {
     'nav.work': 'Work',
+    'nav.solutions': 'Solutions',
     'nav.projects': 'Projects',
     'nav.about': 'About',
     'nav.contact': 'Contact',
@@ -32,8 +33,13 @@ export const ui = {
     'work.present': 'Present',
     'work.stack': 'Stack',
 
-    'projects.label': 'Selected work',
-    'projects.title': 'Things I’ve built',
+    'solutions.label': 'Delivered',
+    'solutions.title': 'Shipped in production',
+    'solutions.intro':
+      'Production AI delivered for clients at autoMEE. These are confidential engagements, so there are no public repositories.',
+
+    'projects.label': 'Personal builds',
+    'projects.title': 'Open-source projects',
     'projects.code': 'Source',
     'projects.demo': 'Live',
 
@@ -51,6 +57,7 @@ export const ui = {
   },
   pl: {
     'nav.work': 'Doświadczenie',
+    'nav.solutions': 'Wdrożenia',
     'nav.projects': 'Projekty',
     'nav.about': 'O mnie',
     'nav.contact': 'Kontakt',
@@ -75,8 +82,13 @@ export const ui = {
     'work.present': 'Obecnie',
     'work.stack': 'Technologie',
 
-    'projects.label': 'Wybrane projekty',
-    'projects.title': 'Co zbudowałem',
+    'solutions.label': 'Wdrożenia',
+    'solutions.title': 'Wdrożone produkcyjnie',
+    'solutions.intro':
+      'Produkcyjne AI dostarczone dla klientów w autoMEE. To poufne wdrożenia, dlatego bez publicznych repozytoriów.',
+
+    'projects.label': 'Projekty własne',
+    'projects.title': 'Projekty open source',
     'projects.code': 'Kod',
     'projects.demo': 'Demo',
 
