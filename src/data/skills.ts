@@ -12,7 +12,7 @@ export const skills: SkillGroup[] = [
   },
   {
     label: { en: 'AI & LLM Systems', pl: 'Systemy AI i LLM' },
-    items: ['Agentic AI', 'RAG', 'Prompt Engineering', 'LangChain', 'LlamaIndex', 'OpenAI API', 'Claude', 'Gemini', 'Hugging Face'],
+    items: ['Agentic AI', 'RAG', 'Prompt Engineering', 'LangChain', 'LlamaIndex', 'OpenAI API', 'Claude', 'Gemini', 'Hugging Face', 'Claude Code', 'Codex', 'Hermes Agent'],
   },
   {
     label: { en: 'ML & Data', pl: 'ML i dane' },
@@ -28,6 +28,6 @@ export const skills: SkillGroup[] = [
   },
   {
     label: { en: 'Tools', pl: 'Narzędzia' },
-    items: ['Git', 'GitHub', 'Linux', 'Claude Code'],
+    items: ['Git', 'GitHub', 'Linux'],
   },
 ];
