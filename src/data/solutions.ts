@@ -19,7 +19,7 @@ export const solutions: Solution[] = [
     context: 'autoMEE',
     tagline: {
       en: 'Scraping agents and an AI layer that automate finding, comparing, and sharing sea-freight rates across carriers.',
-      pl: 'Agenty scrapujące i warstwa AI automatyzujące wyszukiwanie, porównywanie i udostępnianie stawek frachtu morskiego od wielu armatorów.',
+      pl: 'Agenci scrapujący i warstwa AI automatyzują wyszukiwanie, porównywanie i udostępnianie stawek frachtu morskiego od wielu armatorów.',
     },
     highlights: {
       en: [
@@ -30,7 +30,7 @@ export const solutions: Solution[] = [
       ],
       pl: [
         'Zaprojektowałem platformę obsługującą wielu armatorów, która scrapuje, normalizuje i zapisuje stawki frachtu w bazie danych.',
-        'Zbudowałem agenty scrapujące pobierające stawki ze źródeł armatorów i utrwalające je do dalszego odpytywania.',
+        'Zbudowałem agentów scrapujących, którzy pobierają stawki ze źródeł armatorów i utrwalają je do dalszego odpytywania.',
         'Stworzyłem warstwę AI do wyszukiwania, analizy i prezentacji stawek przy dużej liczbie ofert.',
         'Zastąpiłem ręczne sprawdzanie wielu źródeł zautomatyzowanym procesem.',
       ],
